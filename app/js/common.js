@@ -9,7 +9,7 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
+	$("").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
@@ -66,6 +66,16 @@ $(function() {
 	      $icon.removeClass( "is-active" );
 	   }, 100);
 	});
+
+
+	// scroll
+  $('a[href^="#"]').click(function () {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+			
+			$('body,html').animate({scrollTop: top}, 1500);
+  });
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
