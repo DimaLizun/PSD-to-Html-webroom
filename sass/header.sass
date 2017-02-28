@@ -1,0 +1,90 @@
+@import "vars.sass"
+
+@import "app/libs/owl.carousel/dist/assets/owl.theme.default"
+@import "app/libs/owl.carousel/dist/assets/owl.carousel"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+body::-webkit-scrollbar 
+   width: 1em
+
+ 
+body::-webkit-scrollbar-track 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4)
+
+ 
+body::-webkit-scrollbar-thumb 
+  background-color: darkgrey
+  outline: 1px solid slategrey
+
+.hidden
+	display: none
+
+.owl-carousel
+	width: 100%
+	height: auto
+
+.header
+	height: auto
+	background: url('/img/bg-header.jpg')
+	background-size: cover
+	position: relative
+	&::before
+		content: ""
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		position: absolute
+		background: rgba(210,210,210,.8)
+	.menu
+		margin-top: 28px
+		float: right
+		ul
+			li
+				display: inline
+				margin: 25px
+				font-family: "RobotoBold", sans-serif
+				font-size: em(20px)
+				a
+
+					margin-bottom: 8px
+					text-decoration: none
+					color: inherit
+					transition: color .4s ease
+
+					&:hover
+						color: white 
+
+
+
+.slider	
+	.slider-context
+		padding-top: 22px
+		h2
+			font-family: "RobotoBold",sans-serif
+			font-size: em(36px)
+		p
+			width: 85%
+			font-family: "RobotoCondensedRegular",sans-serif
+			font-size: em(23px)
+	img
+		margin: 48px 0
+		border: 3px solid darken($main-color, 20%)
+
+.slide-img
+	height: auto
+	width: 100%
+	opacity: .9
+
+.owl-dots
+	padding-bottom: 80px
+.owl-nav
+	margin-top: 20px !important
+

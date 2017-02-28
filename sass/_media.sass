@@ -1,0 +1,165 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.slider
+		padding-top: 10px
+		.slider-context
+			h2
+				font-size: em(30px)
+			p
+				width: 85%
+				font-size: em(20px)
+
+	.service
+		.service-item
+			width: 220px
+			p
+				width: 200px
+				font-size: em(16px)
+			h2
+				font-size: em(32px)
+				margin-bottom: 0
+			.f6
+				padding-top: 40px 
+				font-size: 70px
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+	.slider
+		.slider-context
+			h2
+				font-size: em(32px)
+			p
+				width: 85%
+				font-size: em(23px)
+
+	.owl-dots
+		padding-bottom: 20px
+	.owl-nav
+		margin-top: 0 !important
+
+	.service
+		.service-item
+			width: 170px
+			p
+				width: 150px
+				font-size: em(14px)
+			h2
+				font-size: em(20px)
+				margin-bottom: 0
+			.fa
+				padding-top: 20px 
+				font-size: 70px
+	.form
+		height: 320px
+		textarea,
+		input[type="text"]
+			height: 40px
+			font-size: em(16px)
+			padding-left: 8px
+		textarea[type="text"]
+			height: 100px
+			resize: none
+		button
+			font-size: em(17px)
+			height: 50px
+			margin-bottom: 40px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+	.service
+		padding: 20px 0 30px
+		.service-item
+			width: 100%
+			margin-top: 30px
+			h2
+				font-size: em(35px)
+			p
+				width: 300px
+				font-size: em(20px)
+				padding-bottom: 10px
+			.fa
+				padding-top: 40px 
+				font-size: 100px
+	.work
+		.work-item-second
+			margin-bottom: 10px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.slider
+		.slider-context
+			padding-top: 0
+			h2
+				font-size: em(30px)
+			p
+				font-size: em(21px)
+	.hamburger
+		padding: 49px 0px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
